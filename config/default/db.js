@@ -11,7 +11,13 @@ var cassandra = {
 	port: '3321'
 }
 
+var redis = {
+	host: 'locahost',
+	port: '5553'
+}
+
 module.exports = {
 	mysql: mysql,
-	cassandra: cassandra
+	cassandra: cassandra,
+	redis: redis,
 }
