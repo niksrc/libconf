@@ -1,4 +1,5 @@
-# libconf
+# libconf [![Build Status](https://travis-ci.org/niksrc/libconf.svg?branch=master)](https://travis-ci.org/niksrc/libconf)
+
 
 > Minimal config library 
 
