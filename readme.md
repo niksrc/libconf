@@ -12,7 +12,7 @@
 $ npm install --save libconf
 ```
 ## Loading
- By default it searches in directory specified by `NODE_ENV` and fallback to `default` in case it doesn't find keys there. 
+By default it searches in directory specified by `NODE_ENV` and fallback to `default` in case it doesn't find keys there. 
  
 Default config dir is `config` which can be overriden by `NODE_ENV_CONFIG_DIR`.
 
@@ -59,7 +59,7 @@ config.has('db', 'mysql') // true
 
 ## API
 All the methods fallback to default directory incase value in current config dir (`NODE_ENV`) is empty
-### ner.get(type, key)
+### config.get(type, key)
 Returns value of key in config  `type`
 #### type
 
@@ -73,7 +73,7 @@ Type: `string`<br>
 
 Key to fetch in the file `type`
 
-### ner.has(type, key)
+### config.has(type, key)
 Checks if key exist in config  `type` returns boolean
 #### type
 
@@ -88,7 +88,7 @@ Type: `string`<br>
 Key to check in the file `type`
 
 
-### ner.getAll(type)
+### config.getAll(type)
 Returns all keys in config `type`
 
 #### type
