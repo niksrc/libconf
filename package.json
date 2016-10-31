@@ -1,10 +1,10 @@
 {
   "name": "libconf",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Minimal config library for humans",
   "main": "index.js",
   "scripts": {
-    "test": "ava tests/"
+    "test": "ava test.js"
   },
   "keywords": [
     "Config",
