@@ -1,3 +1,4 @@
+'use strict';
 const loadConfig = require('./lib/loadConfig');
 const api = require('./lib/api');
 const path = require('path');
