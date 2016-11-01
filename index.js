@@ -1,7 +1,7 @@
 'use strict';
+const path = require('path');
 const loadConfig = require('./lib/loadConfig');
 const api = require('./lib/api');
-const path = require('path');
 
 // Config base directory in the project
 const configHome = process.env.NODE_ENV_CONFIG_DIR || path.resolve(process.cwd(), './config');
@@ -18,12 +18,12 @@ let config = {
 
 // if env is not default also load config for it
 if (env !== 'default') {
- config[env] = loadConfig(configHome, env);
+	config[env] = loadConfig(configHome, env);
 }
 
 // bind default params and export
 module.exports = {
 	has: api.has.bind(null, env, config),
 	get: api.get.bind(null, env, config),
-	getAll: api.getAll.bind(null, env, config),
+	getAll: api.getAll.bind(null, env, config)
 };
