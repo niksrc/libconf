@@ -1,6 +1,6 @@
 'use strict';
 const path = require('path');
-const loadConfig = require('./lib/loadConfig');
+const loadConfig = require('./lib/load-config');
 const api = require('./lib/api');
 
 // Config base directory in the project
